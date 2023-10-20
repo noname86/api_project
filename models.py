@@ -3,7 +3,7 @@ from config import db, ma
 
 class Person(db.Model):
     __tablename__ = "person"
-    id = db.Column(db.Intreger, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     lname = db.Column(db.String(32), unique=True)
     fname = db.Column(db.String(32))
     timestamp = db.Column(
